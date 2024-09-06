@@ -1,0 +1,5 @@
+@AvaliacaoB3.Server_HostAddress = http://localhost:5177
+
+POST {{AvaliacaoB3.Server_HostAddress}}/interest/
+Accept: application/json
+###
