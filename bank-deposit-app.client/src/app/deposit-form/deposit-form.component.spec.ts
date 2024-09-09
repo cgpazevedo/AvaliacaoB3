@@ -15,8 +15,8 @@ describe('DepositFormComponent', () => {
     const depositServiceSpy = jasmine.createSpyObj('BankDepositService', ['postBankDeposit']);
 
     await TestBed.configureTestingModule({
-      declarations: [DepositFormComponent],
-      imports: [FormsModule, HttpClientTestingModule],
+      //declarations: [DepositFormComponent],
+      imports: [FormsModule, HttpClientTestingModule, DepositFormComponent],
       providers: [{ provide: BankDepositService, useValue: depositServiceSpy }]
     }).compileComponents();
 

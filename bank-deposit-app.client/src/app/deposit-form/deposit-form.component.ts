@@ -37,7 +37,7 @@ export class DepositFormComponent {
           this.errorMessage = '';
         },
         (error) => {
-          this.errorMessage = 'Failed to fetch the response from the server.' + error.message;
+          this.errorMessage = 'Failed to fetch the response from the server.';
           console.error(error);
         }
       );
